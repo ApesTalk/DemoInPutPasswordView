@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4M-9F-luL">
+                                <rect key="frame" x="30" y="100" width="540" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="VaI-tu-Pw7"/>
+                                </constraints>
+                                <state key="normal" title="输入密码">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showInputView:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hH0-3v-4wi"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fb3-O3-aqD">
+                                <rect key="frame" x="30" y="200" width="540" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="M2I-0W-BYy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="X4M-9F-luL" secondAttribute="trailing" constant="30" id="2R9-1I-V8j"/>
+                            <constraint firstItem="fb3-O3-aqD" firstAttribute="top" secondItem="X4M-9F-luL" secondAttribute="bottom" constant="50" id="45i-TB-w3D"/>
+                            <constraint firstItem="fb3-O3-aqD" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="30" id="49O-nF-hAD"/>
+                            <constraint firstAttribute="centerX" secondItem="X4M-9F-luL" secondAttribute="centerX" id="GPa-9P-Dr3"/>
+                            <constraint firstItem="X4M-9F-luL" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="100" id="PJr-k0-hkC"/>
+                            <constraint firstAttribute="centerX" secondItem="fb3-O3-aqD" secondAttribute="centerX" id="bJ3-0R-xQP"/>
+                            <constraint firstAttribute="trailing" secondItem="fb3-O3-aqD" secondAttribute="trailing" constant="30" id="kci-4b-ucM"/>
+                            <constraint firstItem="X4M-9F-luL" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="30" id="yBK-iP-ex8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="fb3-O3-aqD" id="7KG-Q9-7h3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
