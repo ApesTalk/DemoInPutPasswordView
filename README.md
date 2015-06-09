@@ -13,5 +13,3 @@ popView.frame = CGRectMake((self.view.frame.size.width - 250)*0.5, 50, 250, 150)
 popView.delegate = self;<br/>
 [popView pop];<br/>
 
-效果图：
-<hr src='http://d.hiphotos.baidu.com/image/w%3D230/sign=0a78315357fbb2fb342b5f117f4b2043/e850352ac65c103800d5f7ccb0119313b07e8910.jpg'>
