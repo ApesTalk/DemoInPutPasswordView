@@ -13,6 +13,7 @@ popView.frame = CGRectMake((self.view.frame.size.width - 250)*0.5, 50, 250, 150)
 popView.delegate = self;<br/>
 [popView pop];<br/>
 
-效果图：
-<img src="https://github.com/lqcjdx/DemoInPutPasswordView/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE.gif"/>
+<br/>效果图：<br/>
+<br/>
+<img src="https://github.com/lqcjdx/DemoInPutPasswordView/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE.gif"/><br/>
 
