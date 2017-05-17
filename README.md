@@ -7,14 +7,15 @@
 - 1.将相关类导入到你的项目中
 - 2.添加引用#import "LMPopInputPasswordView.h"，实现委托LMPopInputPassViewDelegate
 - 3.创建对象并设置委托，弹出视图：
-	```
-	LMPopInputPasswordView *popView = [[LMPopInputPasswordView alloc]init];
-	popView.frame = CGRectMake((self.view.frame.size.width - 250)*0.5, 50, 250, 150);
-	popView.delegate = self;
-	[popView pop];
+	
+```
+LMPopInputPasswordView *popView = [[LMPopInputPasswordView alloc]init];
+popView.frame = CGRectMake((self.view.frame.size.width - 250)*0.5, 50, 250, 150);
+popView.delegate = self;
+[popView pop];	
 ```
 
 ## 效果图：
-![](https://github.com/lqcjdx/DemoInPutPasswordView/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE.gif)
+![](https://github.com/lqcjdx/DemoInPutPasswordView/blob/master/input.gif)
 
 
